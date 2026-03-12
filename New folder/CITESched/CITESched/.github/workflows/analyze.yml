@@ -7,6 +7,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: subosito/flutter-action@v2
         with:
           channel: "stable"
@@ -17,4 +19,10 @@ jobs:
           cd ../citesched_server && dart pub get
 
       - name: Run Analysis
-        run: dart analyze .
+        run: |
+          dart analyze --format=machine . > analysis_report.txt
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v3
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
