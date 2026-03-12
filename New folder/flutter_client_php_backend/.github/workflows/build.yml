@@ -22,6 +22,6 @@ jobs:
         with:
           args: >
             -Dsonar.projectKey=Ashhh02_PHP-FLUTTER
-            -Dsonar.organization=ashhh02
             -Dsonar.sources="New folder/flutter_client_php_backend"
             -Dsonar.exclusions=**/android/**,**/ios/**,**/.dart_tool/**,**/build/**,**/screenshots/**
+            -Dsonar.php.exclusions=**/vendor/**
