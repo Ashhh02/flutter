@@ -18,9 +18,9 @@ jobs:
         uses: sonarsource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }} # Required if you're using self-hosted SonarQube
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         with:
           args: >
             -Dsonar.projectKey=Ashhh02_PHP-FLUTTER
-            -Dsonar.sources=.
-            -Dsonar.scm.provider=git
+            -Dsonar.sources=New folder/flutter_client_php_backend
+            -Dsonar.exclusions=**/android/**,**/ios/**,**/.dart_tool/**,**/build/**
