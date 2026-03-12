@@ -1,0 +1,91 @@
+emailIdp:
+  - login:
+  - startRegistration:
+  - verifyRegistrationCode:
+  - finishRegistration:
+  - startPasswordReset:
+  - verifyPasswordResetCode:
+  - finishPasswordReset:
+googleIdp:
+  - login:
+jwtRefresh:
+  - refreshAccessToken:
+admin:
+  - assignRole:
+  - getAllUserRoles:
+  - createFaculty:
+  - getAllFaculty:
+  - updateFaculty:
+  - deleteFaculty:
+  - createStudent:
+  - getAllStudents:
+  - updateStudent:
+  - getDistinctStudentSections:
+  - deleteStudent:
+  - createRoom:
+  - getAllRooms:
+  - updateRoom:
+  - deleteRoom:
+  - createSubject:
+  - getAllSubjects:
+  - updateSubject:
+  - deleteSubject:
+  - createTimeslot:
+  - getAllTimeslots:
+  - updateTimeslot:
+  - deleteTimeslot:
+  - createSchedule:
+  - testMaxLoadValidation:
+  - getAllSchedules:
+  - getFacultySchedule:
+  - getSubjectSchedule:
+  - getRoomSchedule:
+  - updateSchedule:
+  - deleteSchedule:
+  - generateSchedule:
+  - getDashboardStats:
+  - validateSchedule:
+  - getAllConflicts:
+  - getFacultyLoadReport:
+  - getRoomUtilizationReport:
+  - getConflictSummaryReport:
+  - getScheduleOverviewReport:
+  - createSection:
+  - getAllSections:
+  - updateSection:
+  - deleteSection:
+  - setFacultyAvailability:
+  - getFacultyAvailability:
+  - getAllFacultyAvailabilities:
+  - deleteFacultyAvailability:
+  - precheckSchedule:
+  - regenerateSchedule:
+customAuth:
+  - loginWithId:
+debug:
+  - getSessionInfo:
+faculty:
+  - getMySchedule:
+  - getMyProfile:
+nLP:
+  - query:
+setup:
+  - createAccount:
+  - getUserInfoByEmail:
+student:
+  - getSchedules:
+  - getScheduleById:
+  - getMyProfile:
+  - updateMyProfile:
+  - getFaculty:
+  - getRooms:
+  - getSubjects:
+  - getTimeslots:
+studentSchedule:
+  - fetchMySchedule:
+timetable:
+  - getSchedules:
+  - getSummary:
+  - getPersonalSchedule:
+greeting:
+  - hello:

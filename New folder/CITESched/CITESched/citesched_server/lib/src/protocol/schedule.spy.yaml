@@ -1,0 +1,20 @@
+class: Schedule
+table: schedule
+fields:
+  subjectId: int
+  subject: Subject?, relation(field=subjectId)
+  facultyId: int
+  faculty: Faculty?, relation(field=facultyId)
+  roomId: int?
+  room: Room?, relation(field=roomId)
+  timeslotId: int?
+  timeslot: Timeslot?, relation(field=timeslotId)
+  section: String
+  sectionId: int?
+  sectionRef: Section?, relation(field=sectionId)
+  loadTypes: List<SubjectType>?
+  units: double?
+  hours: double?
+  isActive: bool, default=true
+  createdAt: DateTime
+  updatedAt: DateTime

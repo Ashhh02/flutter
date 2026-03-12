@@ -1,0 +1,15 @@
+class: Room
+table: room
+fields:
+  name: String
+  capacity: int
+  type: RoomType
+  program: Program
+  isActive: bool
+  createdAt: DateTime
+  updatedAt: DateTime
+
+indexes:
+  room_name_unique_idx:
+    fields: name
+    unique: true

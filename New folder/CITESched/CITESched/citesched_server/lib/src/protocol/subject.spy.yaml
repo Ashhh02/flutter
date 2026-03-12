@@ -1,0 +1,16 @@
+class: Subject
+table: subject
+fields:
+  code: String
+  name: String
+  units: int
+  hours: double?
+  yearLevel: int?
+  term: int?
+  facultyId: int?
+  types: List<SubjectType>
+  program: Program
+  studentsCount: int
+  isActive: bool, default=true
+  createdAt: DateTime
+  updatedAt: DateTime
